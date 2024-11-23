@@ -1,7 +1,6 @@
-#include <SDL2/SDL.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "game.h"
+#include "window.h"
 
 
 App app;
@@ -55,13 +54,13 @@ void doInput(void) {
 }
 
 void prepareScene(void) {
-    SDL_SetRenderDrawColor(app.renderer, 0, 0, 255, 0.5);
-    SDL_RenderClear(app.renderer);
+
 }
 
 void presentScene(void) {
-    SDL_RenderPresent(app.renderer);
+
 }
+
 
 void cleanup(void) {
     if(app.renderer) {

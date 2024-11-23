@@ -1,7 +1,6 @@
-#include <SDL2/SDL.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "game.h"
+#include "window.h"
 
 int main(int argc, char *argv[]) {
     memset(&app, 0, sizeof(App));
@@ -11,11 +10,8 @@ int main(int argc, char *argv[]) {
     atexit(cleanup);
 
     while(1) {
-        prepareScene();
 
         doInput();
-
-        presentScene();
 
         SDL_Delay(16);
     }
