@@ -16,3 +16,8 @@ void initDangeon(void) {
 	// app.delegate.logic = &logic;
 	// app.delegate.draw = &draw;
 }
+
+
+static void logic(void) {
+	doPlayer();
+}

@@ -11,9 +11,10 @@ struct Entity
 	int x;
 	int y;
 	int facing;
-	// AtlasImage *texture;
+	AtlasImage * texture;
 	Entity *next;
 };
+
 
 typedef struct {
 	SDL_Point renderOffset;
