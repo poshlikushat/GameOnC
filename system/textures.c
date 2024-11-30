@@ -7,7 +7,7 @@ SDL_Texture *texture = NULL;
 SDL_Texture * loadTexture(const char *path) {
 	SDL_Surface *surface = IMG_Load(path);
 	if(!surface) {
-		printf('Image Error: %s\n', IMG_GetError());
+		printf("Image Error: %s\n", IMG_GetError());
 		return NULL;
 	}
 

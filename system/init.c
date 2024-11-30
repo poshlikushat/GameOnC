@@ -1,5 +1,5 @@
+#include "../defs.h"
 #include "init.h"
-#include "defs.h"
 
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
@@ -12,7 +12,7 @@ bool initSDL() {
 	}
 
 	if(!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
-		printf('SDL_Image Init Error: %s\n ', SDL_GetError());
+		printf("SDL_Image Init Error: %s\n", SDL_GetError());
 		SDL_Quit();
 		return false;
 	}
@@ -26,7 +26,7 @@ bool initSDL() {
 
 	if (!window)
 	{
-		printf('Window Error: %s\n', SDL_GetError());
+		printf("Window Error: %s\n", SDL_GetError());
 		SDL_Quit();
 		return false;
 	}
@@ -34,7 +34,7 @@ bool initSDL() {
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 	if (!renderer)
 	{
-		printf('Renderer Error: %s\n', SDL_GetError());
+		printf("Renderer Error: %s\n", SDL_GetError());
 		SDL_DestroyWindow(window);
 		SDL_Quit();
 		return false;

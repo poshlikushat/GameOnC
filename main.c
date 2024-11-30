@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[]) {
 	if(!initSDL()) {
-		printf('Init Error!\n');
+		printf("Init Error!\n");
 		return 1;
 	}
 

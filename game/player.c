@@ -2,9 +2,9 @@
 #include "entities.h"
 
 static void draw(void) {
-	drawMap();  // Add
+	// drawMap();  // Add
 
-	drawEntities();  // Add
+	// drawEntities();  // Add
 }
 
 

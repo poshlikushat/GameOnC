@@ -1,14 +1,14 @@
-#include "defs.h"
-#include "structs.h"
+#include "../defs.h"
+#include "../structs.h"
 
 extern Dungeon dungeon;
 
 void initDangeon(void) {
-	initMap();  // Add
+	// initMap();  // Add
 
-	initEntities();  // Add
+	// initEntities();  // Add
 
-	initPlayer();  // Add
+	// initPlayer();  // Add
 
 	dungeon.renderOffset.x = (SCREEN_WIDTH - (MAP_WIDTH * TITLE_SIZE)) / 2;
 	dungeon.renderOffset.y = (SCREEN_HEIGHT - (MAP_HEIGHT * TITLE_SIZE)) / 2;
@@ -19,5 +19,5 @@ void initDangeon(void) {
 
 
 static void logic(void) {
-	doPlayer();
+	// doPlayer();
 }

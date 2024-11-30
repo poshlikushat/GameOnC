@@ -6,15 +6,16 @@ typedef struct {
 	int data [MAP_WIDTH] [MAP_HEIGHT];
 } Map;
 
-struct Entity
+
+
+typedef struct
 {
 	int x;
 	int y;
 	int facing;
-	AtlasImage * texture;
-	Entity *next;
-};
-
+	// AtlasImage *texture;
+	struct Entity *next;
+} Entity;
 
 typedef struct {
 	SDL_Point renderOffset;
